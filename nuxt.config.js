@@ -4,8 +4,8 @@ module.exports = {
     build: {
         plugins: [
             new webpack.DefinePlugin({
-                'process.VERSION': require('./package.json').version
-            })
+                'process.VERSION': require('./package.json').version,
+            }),
         ],
         vendor: ['axios'],
         extend(config, ctx) {
