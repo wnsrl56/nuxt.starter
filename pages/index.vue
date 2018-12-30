@@ -1,14 +1,12 @@
 <template>
-  <div>
-    <Article text="World!" />
-  </div>
+  <MainView class="main-view" />
 </template>
 <script>
-  import Article from "../components/Article"
+  import MainView from "../components/Viewport.vue"
 
   export default {
     components: {
-      Article,
+      MainView,
     },
     data() {
       return {
@@ -18,5 +16,9 @@
     }
   }
 </script>
-<style type="scss">
+<style>
+  .main-view {
+    width: 100%;
+    height: 100%;
+  }
 </style>
